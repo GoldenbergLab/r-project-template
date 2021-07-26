@@ -1,0 +1,48 @@
+---
+title: "Processing"
+output: html_notebook
+---
+
+
+```{r}
+library(aws.s3)
+library(tidyverse)
+
+#Provides a list of all of the buckets in the list 
+bucketlist("s3://task-data-raw/")
+
+#define your aws-s3 folder
+aws_folder ="bills-task-pilot"
+
+#download all the files from that folder to your raw library 
+system(paste("aws s3 cp s3://task-data-raw/",aws_folder," ../data/raw --recursive", sep = ""))
+
+#creat a list of the files and their sizes
+raw_files = file.info(list.files ("../data/raw", 
+                                  full.names =TRUE, 
+                                  recursive=FALSE)) %>% 
+  arrange(size) %>% 
+  mutate(size_kb = size/1000)
+
+ggplot(raw_files,aes(x=size_kb)) +
+  geom_histogram(color = "black") 
+
+#define your kb file size criteria for files you wish to remove
+size_criteria = 150
+
+system(paste("find ../data/raw\ -type f -size -5k -exec mv ../data/raw ../data/raw/did_not_finish \+" ))
+
+system(paste("mv ../data/raw ../data/raw/did_not_finish\ " ))
+
+
+mv ../data/raw ../data/raw/did_not_finish/  \;
+syste
+
+```
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Cmd+Option+I*.
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Cmd+Shift+K* to preview the HTML file). 
+
+The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
+
