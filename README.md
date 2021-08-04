@@ -25,5 +25,5 @@ This template will:
            "AWS_SECRET_ACCESS_KEY" = "mysecretkey",
            "AWS_DEFAULT_REGION" = "us-east-1")
 	```
-3. 
+3. Run line 18 of the processing code. Note: the raw data files should *NEVER EVER* reach GitHub. They are meant to be stored locally on your computer only. This repository is preprogrammed to ignore everything in the `data/raw/` folder - DO NOT CHANGE THAT!
 
