@@ -29,14 +29,25 @@ ggplot(raw_files,aes(x=size_kb)) +
 
 #define your kb file size criteria for files you wish to remove
 size_criteria = 150
+#shell(paste("find ..\\data\\raw\\ -type f -size -150k -exec mv ..\\data\\raw ..\\data\\raw\\did_not_finish\\+"))
+#system(paste("mv ../data/raw ../data/raw/did_not_finish\ " ))
 
-system(paste("find ../data/raw\ -type f -size -5k -exec mv ../data/raw ../data/raw/did_not_finish \+" ))
-
-system(paste("mv ../data/raw ../data/raw/did_not_finish\ " ))
+#above code does not work (yet), please manually move the files that are too small according to the histogram into the did_not_finish folder to proceed.
 
 
-mv ../data/raw ../data/raw/did_not_finish/  \;
-syste
+path =  "../data/raw" #path to the raw files (of good size)
+
+#get all csv files and combine them
+csv_files <- fs::dir_ls(path, regexp = "\\.csv$") 
+
+#map dataframe on to csvs
+d = csv_files %>% 
+  map_dfr(read_csv)
+
+
+# remove unimportant variables
+d <- d %>% 
+  dplyr::select(-key_press, -internal_node_id, -url, -description, -trial_type,  -face_1,  -button_pressed, -faceIdentity)
 
 ```
 
