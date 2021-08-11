@@ -1,7 +1,7 @@
 # analysis-r-template
 
 ## 0 Purpose:
-The goal of this project is to centralize and make more efficient the process of analyzing data. 
+The goal of this project is to centralize and make more efficient the process of analyzing data. To do this, we have created an AWS-to-analysis pipeline that is easy to replicate and follow across many different projects.
 Duplicate this project and rename it in accordance with your own analysis.
 
 This template will: 
