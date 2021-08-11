@@ -1,7 +1,8 @@
 # analysis-r-template
 
 ## 0 Purpose:
-The goal of this project is to centralize and make more efficient the process of analyzing data.
+The goal of this project is to centralize and make more efficient the process of analyzing data. 
+Duplicate this project and rename it in accordance with your own analysis.
 
 This template will: 
 
