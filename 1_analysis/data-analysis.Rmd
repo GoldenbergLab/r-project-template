@@ -1,0 +1,80 @@
+---
+title: "__ Data Analysis (change title to reflect your study)"
+output: html_notebook
+---
+
+
+
+```{r}
+library(Rmisc)
+library(tidyverse)
+library(lme4)
+library(lmerTest) 
+library(jsonlite)
+library(car)
+library(simr)
+
+path_to_csv = "" #change to match your path
+
+d <- read.csv(path_to_csv)
+d = d[d$trial >= 1, ] #eliminate practice trials
+
+```
+
+### Descriptives
+```{r}
+
+```
+
+
+### Participant Demographics
+```{r}
+
+```
+
+
+### H1 (Main Effect) Analysis (replace this with description of main effect)
+
+```{r}
+
+```
+
+
+### H2 Analysis (replace this with description of H2)
+
+```{r}
+
+```
+
+### H3 Analysis (replace this with description of H3)
+
+```{r}
+
+```
+
+
+### Power Analysis 
+
+```{r}
+
+
+
+PowerModel = "" ##replace with main effect analysis
+
+## use this line to extend the number of trials
+PowerModelExt = extend(PowerModel, within = "participant_id+ratingType", n = 50)
+
+## use this line to extend the number of participants
+PowerModelExt = extend(PowerModelExt, along = "participant_id", n = 200)
+
+## run sim
+powerSim(PowerModelExt, nsim=1000)
+
+# model the curve of this hypothetical experiment
+pc <-  powerCurve(PowerModelExt, nsim = 1000, along = "participant_id") 
+
+# plot and numbers
+pc 
+plot(pc)
+
+```

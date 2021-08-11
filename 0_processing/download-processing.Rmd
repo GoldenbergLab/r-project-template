@@ -1,5 +1,5 @@
 ---
-title: "Processing"
+title: "__ Data Processing (change title to reflect your experiment)"
 output: html_notebook
 ---
 
@@ -7,6 +7,8 @@ output: html_notebook
 ```{r}
 library(aws.s3)
 library(tidyverse)
+
+## The purpose of this file is to download the raw data objects from AWS and to put them in a local data folder. Following that, please process the raw data files until ONE SINGLE .csv file is produced. This final .csv should contain one trial per line. 
 
 #Provides a list of all of the buckets in the list 
 bucketlist("s3://task-data-raw/")
@@ -45,9 +47,8 @@ d = csv_files %>%
   map_dfr(read_csv)
 
 
-# remove unimportant variables
-d <- d %>% 
-  dplyr::select(-key_press, -internal_node_id, -url, -description, -trial_type,  -face_1,  -button_pressed, -faceIdentity)
+# Process the data in the next few chunks. The final output of this data processing should be one long-format csv that contains one trial per line.
+
 
 ```
 
