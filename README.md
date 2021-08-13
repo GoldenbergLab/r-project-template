@@ -13,6 +13,7 @@ This template contains the following folders:
 
 - `0_processing`, which guides you through downloading data through AWS and then formatting the csv files to prepare for analysis
 - `1_analysis`, which outlines how analyses should be formatted
+- `data`, which will autodownload the raw data files onto YOUR COMPUTER ONLY. There is a `.gitignore` set in this folder to prevent raw data files from being uploaded to GitHub. **The populated data folder should NEVER REACH THE GITHUB.**
 
 ### Things you need:
 
