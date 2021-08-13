@@ -6,12 +6,17 @@ Duplicate this project and rename it in accordance with your own analysis.
 
 This template will: 
 
-1. Download all experiment data from AWS 
+1. Download all experiment data from AWS and save it **locally to your machine.** 
 2. Demonstrate how to format `R` code analyses
+
+This template contains the following folders: 
+
+- `0_processing`, which guides you through downloading data through AWS and then formatting the csv files to prepare for analysis
+- `1_analysis`, which outlines how analyses should be formatted
 
 ### Things you need:
 
-- AWS API key (either generate your own via IAM or ask Zi)
+- [AWS access key](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html) (either generate your own via IAM or ask Zi)
 - `R`, `aws.s3` package
 - name of your experiment folder in aws
 
