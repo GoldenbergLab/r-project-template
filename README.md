@@ -47,8 +47,9 @@ This template contains the following folders:
 ## Analysis Coding convention
 
 - **Chunk 1 is reserved for downloading the data and load the packages.**
+- **Variable names should clearly indicate what they refer to.** Rename unclear variables that are unclear.
 - **Chunks should all be named.** You can name the chunk by typing the name after `r` on the first line of the chunk. So, to name a chunk `cats`, the first line of the chunk should say `{r cats}`
 - Analyses should be **clearly** described in the chunk title, as well as in the heading above it.
-- **Variable names should clearly indicate what they refer to.** Rename unclear variables that are unclear.
+- Each chunk should contain an **analysis** (typically an `LMER` or `GLMER`) followed by a **graph.**
 - Graphs should be clearly labeled on titles, x-axis, and y-axis.
 
