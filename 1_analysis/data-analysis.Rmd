@@ -5,7 +5,7 @@ output: html_notebook
 
 
 
-```{r}
+```{r download packages and format .csv to prepare for analysis}
 library(Rmisc)
 library(tidyverse)
 library(lme4)
@@ -22,42 +22,57 @@ d = d[d$trial >= 1, ] #eliminate practice trials
 ```
 
 ### Descriptives
-```{r}
+```{r Descriptives of experiment results}
+
+## what was the distribution of the participants' rankings or results?
 
 ```
 
 
 ### Participant Demographics
-```{r}
+```{r Demographics of participants}
+
+## number of participants
+
+## gender
+
+## age
 
 ```
 
 
-### H1 (Main Effect) Analysis (replace this with description of main effect)
+### H1 (Main Effect) Analysis (replace this with description of H1)
 
-```{r}
+#### How does [main effect variable] influence [results]?
+
+```{r H1}
 
 ```
 
 
 ### H2 Analysis (replace this with description of H2)
 
-```{r}
+#### How does [H2 variable] influence [results]?
+
+```{r H2}
 
 ```
 
 ### H3 Analysis (replace this with description of H3)
 
-```{r}
+#### How does [H3 variable] influence [results]?
+
+```{r H3}
 
 ```
 
 
 ### Power Analysis 
 
-```{r}
+```{r Power analysis}
 
 
+set.seed(2532)
 
 PowerModel = "" ##replace with main effect analysis
 

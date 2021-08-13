@@ -4,7 +4,7 @@ output: html_notebook
 ---
 
 
-```{r}
+```{r download data and examine file sizes for cutoff point}
 library(aws.s3)
 library(tidyverse)
 
@@ -29,6 +29,11 @@ raw_files = file.info(list.files ("../data/raw",
 ggplot(raw_files,aes(x=size_kb)) +
   geom_histogram(color = "black") 
 
+
+```
+
+
+```{r}
 #define your kb file size criteria for files you wish to remove
 size_criteria = 150
 #shell(paste("find ..\\data\\raw\\ -type f -size -150k -exec mv ..\\data\\raw ..\\data\\raw\\did_not_finish\\+"))
@@ -48,7 +53,6 @@ d = csv_files %>%
 
 
 # Process the data in the next few chunks. The final output of this data processing should be one long-format csv that contains one trial per line.
-
 
 ```
 
