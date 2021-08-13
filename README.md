@@ -37,7 +37,7 @@ This template contains the following folders:
 ## 2 Analyzing data
 
 0. Go to the `1_analysis` folder.
-1. (chunk 1) Load packages and finish formatting the .csv (if necessary)
+1. (chunk 1) Load packages and finish formatting the `.csv` (if necessary)
 2. (chunk 2) Examine the distribution, average or other applicable metrics of the results of the experiment.
 3. (chunk 3) Examine the demographics of the participants.
 4. (chunk 4-6) Examine the main effect and other effects present in the experiment
