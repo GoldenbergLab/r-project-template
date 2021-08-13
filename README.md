@@ -42,3 +42,10 @@ This template contains the following folders:
 3. (chunk 3) Examine the demographics of the participants.
 4. (chunk 4-6) Examine the main effect and other effects present in the experiment
 5. (chunk 7) Perform the power analysis (if necessary)
+
+## Analysis Coding convention
+
+- Chunk 1 is reserved for download the data and load the packages. 
+- Each chunk should have a name. 
+- Each variable name should clearly indicate what it refers to. Rename unclear variables.
+- Each analysis is described clearly in the chunk title, as well as the header above it
