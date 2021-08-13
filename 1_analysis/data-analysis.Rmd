@@ -30,7 +30,7 @@ dl <- ""
 ### Descriptives
 ```{r Descriptives of experiment results}
 
-## what was the distribution of the participants' rankings or results?
+## graph of the distribution of the participants' rankings or results? 
 
 ```
 
@@ -43,6 +43,8 @@ dl <- ""
 ## gender
 
 ## age
+
+## graph
 
 ```
 
