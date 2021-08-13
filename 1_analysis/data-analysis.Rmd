@@ -16,9 +16,15 @@ library(simr)
 
 path_to_csv = "" #change to match your path
 
-d <- read.csv(path_to_csv)
-d = d[d$trial >= 1, ] #eliminate practice trials
 
+# open .csv and read data
+d <- read.csv(path_to_csv)
+
+# eliminate practice trials
+d = d[d$trial >= 1, ] 
+
+# assigned name of long format dataframe
+dl <- ""
 ```
 
 ### Descriptives
@@ -47,6 +53,10 @@ d = d[d$trial >= 1, ] #eliminate practice trials
 
 ```{r H1}
 
+## analysis and p-value of H1
+
+## graph of H1
+
 ```
 
 
@@ -56,6 +66,10 @@ d = d[d$trial >= 1, ] #eliminate practice trials
 
 ```{r H2}
 
+## analysis and p-value of H2
+
+## graph of H2
+
 ```
 
 ### H3 Analysis (replace this with description of H3)
@@ -63,6 +77,10 @@ d = d[d$trial >= 1, ] #eliminate practice trials
 #### How does [H3 variable] influence [results]?
 
 ```{r H3}
+
+## analysis and p-value of H3
+
+## graph of H3
 
 ```
 
