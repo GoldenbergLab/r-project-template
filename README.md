@@ -1,19 +1,19 @@
 # analysis-r-template
 
 ## 0 Purpose:
-The goal of this project is to centralize and make more efficient the process of analyzing data. To do this, we have created an AWS-to-analysis pipeline that is easy to replicate and follow across many different projects.
+The goal of this project is to centralize and make more efficient the process of analyzing data. To do this, we have created a data-to-analysis pipeline that is easy to replicate and follow across many different projects.
 Duplicate this project and rename it in accordance with your own analysis.
 
 This template will: 
 
-1. Download all experiment data from AWS and save it **locally to your machine.** 
+1. Download all experiment data from AWS and save it **locally to your machine.** If you are not using AWS, please follow the instructions in header 1b rather than 1a.
 2. Demonstrate how to format `R` code analyses
 
 This template contains the following folders: 
 
 - `0_processing`, which guides you through downloading data through AWS and then formatting the csv files to prepare for analysis
 - `1_analysis`, which outlines how analyses should be formatted
-- `data`, which will autodownload the raw data files onto YOUR COMPUTER ONLY. There is a `.gitignore` set in this folder to prevent raw data files from being uploaded to GitHub. **The populated data folder should NEVER REACH THE GITHUB.**
+- `data`, which will autodownload the raw data files onto YOUR COMPUTER ONLY (if using AWS). There is a `.gitignore` set in this folder to prevent raw data files from being uploaded to GitHub. **The populated data folder should NEVER REACH THE GITHUB.**
 
 ### Things you need:
 
@@ -21,7 +21,7 @@ This template contains the following folders:
 - `R`, `aws.s3` package
 - name of your experiment folder in aws
 
-## 1 Processing data
+## 1a Processing data (if using AWS)
 
 0. Copy this repository as a new repository
 1. Head to the `0_processing` folder and define `aws_folder` (line 17) as the name of your task folder
@@ -35,14 +35,21 @@ This template contains the following folders:
 3. Run the first chunk of the processing code. This will download all data files on to your machine. Note: the raw data files should **NEVER EVER** reach GitHub. They are meant to be stored locally on your computer only. This repository is preprogrammed to ignore everything in the `data/raw/` folder - **DO NOT CHANGE THAT!**
 4. Examine the histogram and determine the cutoff point for complete versus incomplete files. If the file is incomplete, move it to te `did_not_finish` folder.
 
+## 1b Processing data (if not using AWS)
+
+0. Copy this repository as a new repository
+1. Copy your raw data in to the data/raw folder
+3. Eliminate files that are too small.
+4. Proceed to analysis.
+
 ## 2 Analyzing data
 
 0. Go to the `1_analysis` folder.
-1. (chunk 1) Load packages and finish formatting the `.csv` (if necessary)
-2. (chunk 2) Examine the distribution, average or other applicable metrics of the results of the experiment.
-3. (chunk 3) Examine the demographics of the participants.
-4. (chunk 4-6) Examine the main effect and other effects present in the experiment
-5. (chunk 7) Perform the power analysis (if necessary)
+1. Load packages and finish formatting the `.csv` (if necessary)
+2. Examine the distribution, average or other applicable metrics of the results of the experiment.
+3. Examine the demographics of the participants.
+4. Examine the main effect and other effects present in the experiment
+5. Perform the power analysis (if necessary)
 
 ## Analysis Coding convention
 
