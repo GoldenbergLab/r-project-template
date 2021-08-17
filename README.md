@@ -6,7 +6,7 @@ Duplicate this project and rename it in accordance with your own analysis.
 
 This template will: 
 
-1. Download all experiment data from AWS and save it **locally to your machine.** If you are not using AWS to collect data, please follow the instructions in header 1b rather than 1a.
+1. Download all experiment data from AWS and save it **locally to your machine.** If you are not using AWS to collect data, please follow the instructions in header **1b** rather than **1a.**
 2. Demonstrate how to format `R` code analyses
 
 This template contains the following folders: 
@@ -15,7 +15,8 @@ This template contains the following folders:
 	- `download-processing.Rmd` is the `R` script that performs these actions.
 	- `download-processing.html` is a printout of the script. We make these `.html` files because sometimes we do not want to run the entire `R` code just to see the outcome, plus they can be distributed without the raw data when we only need to see how the analysis was performed.
 - `1_analysis`, which outlines how analyses should be formatted
-	- `data-analysis` is the `R` script that outlines how to analyze 
+	- `data-analysis.Rmd` is the `R` script that outlines how to analyze 
+	- `data-analysis.html` is the `html` printout of the above file
 - `data`, which will autodownload the raw data files onto YOUR COMPUTER ONLY (if using AWS). There is a `.gitignore` set in this folder to prevent raw data files from being uploaded to GitHub. **The populated data folder should NEVER REACH THE GITHUB.**
 
 ### Things you need:
