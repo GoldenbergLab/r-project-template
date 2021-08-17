@@ -3,9 +3,8 @@ title: "__ Data Analysis (change title to reflect your study)"
 output: html_notebook
 ---
 
+```{r download packages and format csv to prepare for analysis}
 
-
-```{r download packages and format .csv to prepare for analysis}
 library(Rmisc)
 library(tidyverse)
 library(lme4)
@@ -13,19 +12,10 @@ library(lmerTest)
 library(jsonlite)
 library(car)
 library(simr)
+library(knitr)
 
-path_to_csv = "" #change to match your path
-
-
-# open .csv and read data
-d <- read.csv(path_to_csv)
-
-# eliminate practice trials
-d = d[d$trial >= 1, ] 
-
-# assigned name of long format dataframe
-dl <- ""
 ```
+
 
 ### Descriptives
 ```{r Descriptives of experiment results}

@@ -6,13 +6,16 @@ Duplicate this project and rename it in accordance with your own analysis.
 
 This template will: 
 
-1. Download all experiment data from AWS and save it **locally to your machine.** If you are not using AWS, please follow the instructions in header 1b rather than 1a.
+1. Download all experiment data from AWS and save it **locally to your machine.** If you are not using AWS to collect data, please follow the instructions in header 1b rather than 1a.
 2. Demonstrate how to format `R` code analyses
 
 This template contains the following folders: 
 
 - `0_processing`, which guides you through downloading data through AWS and then formatting the csv files to prepare for analysis
+	- `download-processing.Rmd` is the `R` script that performs these actions.
+	- `download-processing.html` is a printout of the script. We make these `.html` files because sometimes we do not want to run the entire `R` code just to see the outcome, plus they can be distributed without the raw data when we only need to see how the analysis was performed.
 - `1_analysis`, which outlines how analyses should be formatted
+	- `data-analysis` is the `R` script that outlines how to analyze 
 - `data`, which will autodownload the raw data files onto YOUR COMPUTER ONLY (if using AWS). There is a `.gitignore` set in this folder to prevent raw data files from being uploaded to GitHub. **The populated data folder should NEVER REACH THE GITHUB.**
 
 ### Things you need:
@@ -50,6 +53,7 @@ This template contains the following folders:
 3. Examine the demographics of the participants.
 4. Examine the main effect and other effects present in the experiment
 5. Perform the power analysis (if necessary)
+6. Create an `.html` document of your analysis for easy examination. To do this, 
 
 ## Analysis Coding convention
 
