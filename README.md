@@ -16,13 +16,8 @@ This template will instruct you how to:
 
 1. **Where to put your raw data:** In case your data comes from aws, the processing code includes some simple code that would help you download your data to the raw folder.
 
-<<<<<<< HEAD
-Amit - I think that the text below should move to readme in the processing folder. and there shoudl be a reference here.
- Download all experiment data from AWS and save it **locally to your machine.** If you are not using AWS to collect data, please follow the instructions in header 1b rather than 1a.
-=======
 1. Download all experiment data from AWS and save it **locally to your machine.** If you are not using AWS to collect data, please follow the instructions in header **1b** rather than **1a.**
 2. Demonstrate how to format `R` code analyses
->>>>>>> 9544de613910034f6bf8f5efc2f33998fbcde041
 
 2. Demonstrate how to format `R` code analyses.
 
@@ -39,7 +34,7 @@ This template contains the following folders:
 	- `data-analysis.html` is the `html` printout of the above file
 - `data`, which will autodownload the raw data files onto YOUR COMPUTER ONLY (if using AWS). There is a `.gitignore` set in this folder to prevent raw data files from being uploaded to GitHub. **The populated data folder should NEVER REACH THE GITHUB.**
 
-#amit - this below should be moved to the processing readme file - it shoudl also be specified what to do if you have a raw data or if you want to transfer aws data. 
+#amit - this below should be moved to the processing readme file - it shoudl also be specified what to do if you have a raw data or if you want to transfer aws data.
 
 ### Things you need:
 
