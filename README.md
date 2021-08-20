@@ -1,7 +1,9 @@
 # analysis-r-template
 
 The goal of this project is to centralize and make more efficient the process of analyzing data. To do this, we have created a data-to-analysis pipeline that is easy to replicate and follow across many different projects.
-Duplicate this project and rename it in accordance with your own analysis.
+Duplicate this project and rename it in accordance with your own analysis. 
+
+Amit - The explanation above (duplicate) is still unclear in my mind. What exactly do people need to do to have this in their local folder .
 
 Before you start analyzing any type of data in the lab you need to use this structure to process your files and analyze them.
 
