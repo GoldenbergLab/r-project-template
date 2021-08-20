@@ -8,7 +8,7 @@ Before you start analyzing any type of data in the lab you need to use this stru
 This template will instruct you how to:
 
 1. **Where to put your raw data:** Download all experiment data from AWS and save it **locally to your machine.**  In case your data comes from aws, the processing code includes some simple code that would help you download your data to the raw folder.
-2. Demonstrate how to format `R` code analyses
+2. **Demonstrate how to format `R` code analyses**
 
 This template contains the following folders:
 
