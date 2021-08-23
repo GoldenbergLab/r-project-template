@@ -28,7 +28,7 @@ To use this template, click the green `Use this template` button at the top of t
 
 ### Clone the repository to your local machine
 
-To connect the analysis repository (folder) from GitHub (aka the internet) to your own computer, please go to the green `Code` button with a dropdown menu and do one of two things: 
+To connect (or clone) the analysis repository from GitHub (aka the internet) to your own computer, please go to the green `Code` button with a dropdown menu and do one of two things: 
 
 1. Open with [GitHub Desktop](https://desktop.github.com/) (for those with less coding experience)
 - Please download GitHub desktop using the link above
