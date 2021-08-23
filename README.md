@@ -32,7 +32,8 @@ To connect the analysis repository (folder) from GitHub (aka the internet) to yo
 
 1. Open with [GitHub Desktop](https://desktop.github.com/) (for those with less coding experience)
 - Please download GitHub desktop using the link above
-- Click Open with GitHub Desktop, and pick a location in your personal file system to store it using the GitHub Desktop cloning interface. If using Linux, see option 2.
+- Click `Open with GitHub Desktop`, and pick a location in your personal file system to store it using the GitHub Desktop cloning interface. The default is `Documents/GitHub` (this is fine to use).
+- If using Linux, see option 2.
 
 2. Command line using HTTPS method (for those with more coding experience)
 If using Linux or prefer the command line, you will use the HTTPS-based URL from the Code dropdown menu. The URL will look like https://github.com/startyourlab/r-project-template.git. Click the clipboard icon to copy it. From within your projects directory in the terminal, run git clone ..., replacing the "..." with the URL you just copied.
