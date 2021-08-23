@@ -39,7 +39,8 @@ To connect (or clone) the analysis repository from GitHub (aka the internet) to 
 
 2. **Command line using HTTPS method** (for those with more coding experience)
 
-If using Linux or prefer the command line, you will use the HTTPS-based URL from the Code dropdown menu. The URL will look like https://github.com/startyourlab/r-project-template.git. Click the clipboard icon to copy it. From within your projects directory in the terminal, run git clone ..., replacing the "..." with the URL you just copied.
+- If using Linux or prefer the command line, you will use the HTTPS-based URL from the Code dropdown menu. The URL will look like https://github.com/startyourlab/r-project-template.git. 
+- Click the clipboard icon to copy it. From within your projects directory in the terminal, run git clone ..., replacing the "..." with the URL you just copied.
 
 ## Repository Contents
 
