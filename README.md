@@ -44,7 +44,7 @@ To connect (or clone) the analysis repository from GitHub (aka the internet) to 
 
 ## Repository Contents
 
-This template contains the following folders:
+By now, you should have a repository containing the following folders:
 
 - `processing`, which guides you through downloading data through AWS and then formatting the csv files to prepare for analysis
 	- `download-processing.Rmd` is the `R` script that performs these actions.
