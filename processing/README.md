@@ -13,7 +13,6 @@
 
 ## 1b Processing data (if not using AWS)
 
-0. Copy this repository as a new repository
 1. Copy your raw data in to the data/raw folder
-3. Eliminate files that are too small.
-4. Proceed to analysis.
+2. Eliminate files that are too small.
+3. Proceed to analysis.
