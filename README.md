@@ -2,7 +2,7 @@
 
 ## Purpose
 
-The goal of this project is to centralize and make more efficient the process of analyzing data. To do this, we have created a data-to-analysis pipeline that is easy to replicate and follow across many different projects. Use repository structure to process your files and analyze them.
+The goal of this project is to centralize and make more efficient the process of analyzing data. To do this, we have created a data-to-analysis pipeline that is easy to replicate and follow across many different projects. Use repository (folder) structure to process your files and analyze them.
 
 This template will instruct you how to:
 
@@ -11,21 +11,33 @@ This template will instruct you how to:
 
 ## Get Started
 
+### Create your analysis repository (folder)
+
 To use this template, click the green `Use this template` button at the top of the page. It will ask you to:
 
 - Choose the repository's username/organization name. 
-    - Please set the owner of your analysis template to `GoldenbergLab`.
-- Name the repository, i.e., our-new-r-project.
-    - Please follow this convention for naming your repository: `projectName-analysis-yourName-month-year`. So if your name is Cat and your August 2021 project is about counting kittens, your repository name is `counting-kittens-analysis-cat-aug-2021`.
+    - Please set the owner of your analysis template to our lab (`GoldenbergLab`).
+- Name the repository following this convention: `projectName-analysis-yourName-month-year`. So if your name is Cat and your August 2021 project is about counting kittens, your repository name is `counting-kittens-analysis-cat-aug-2021`.
 - Add a description of your project. Please include:
     1. Project Name
     2. Date of repository creation
     3. Your name, and the names of other who worked on it
     4. The purpose of the project and the main question you asked
     5. The platform on which it was run (Prolific, MTURK, Qualtrics, etc.)
-- Once the repository is generated, you will be redirected to your new repository on GitHub.
+- Once the repository is generated, you will be redirected to it.
 
-## Contents
+### Clone the repository to your local machine
+
+To connect the analysis repository (folder) from GitHub (aka the internet) to your own computer, please go to the green `Code` button with a dropdown menu and do one of two things: 
+
+1. Open with [GitHub Desktop](https://desktop.github.com/) (for those with less coding experience)
+- Please download GitHub desktop using the link above
+- Click Open with GitHub Desktop, and pick a location in your personal file system to store it using the GitHub Desktop cloning interface. If using Linux, see option 2.
+
+2. Command line using HTTPS method (for those with more coding experience)
+If using Linux or prefer the command line, you will use the HTTPS-based URL from the Code dropdown menu. The URL will look like https://github.com/startyourlab/r-project-template.git. Click the clipboard icon to copy it. From within your projects directory in the terminal, run git clone ..., replacing the "..." with the URL you just copied.
+
+## Repository Contents
 
 This template contains the following folders:
 
