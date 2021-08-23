@@ -17,7 +17,7 @@ To use this template, click the green `Use this template` button at the top of t
 
 - Choose the repository's username/organization name. 
     - Please set the owner of your analysis template to our lab (`GoldenbergLab`).
-- Name the repository following this convention: `projectName-analysis`. So if your project is about counting kittens, your repository name is `counting-kittens-analysis`. Full guide on repository naming conventions [here](https://github.com/GoldenbergLab/naming-conventions#repository-names).
+- Name the repository following this convention: `project-name-analysis`. So if your project is about counting kittens, your repository name is `counting-kittens-analysis`. Full guide on repository naming conventions [here](https://github.com/GoldenbergLab/naming-conventions#repository-names).
 - Add a description of your project. Please include:
     1. Project Name
     2. Date of repository creation
