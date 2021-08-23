@@ -15,9 +15,14 @@ To use this template, click the green `Use this template` button at the top of t
 
 - Choose the repository's username/organization name. 
     - Please set the owner of your analysis template to `GoldenbergLab`.
-    - Please follow this convention for naming your repository: `projectName-analysis-yourName-month-year`. So if your name is Cat and your August 2021 project is about counting kittens, your repository name is `counting-kittens-analysis-cat-aug-2021`.
 - Name the repository, i.e., our-new-r-project.
-- Add a description of your project (optional, but highly recommended).
+    - Please follow this convention for naming your repository: `projectName-analysis-yourName-month-year`. So if your name is Cat and your August 2021 project is about counting kittens, your repository name is `counting-kittens-analysis-cat-aug-2021`.
+- Add a description of your project. Please include:
+    1. Project Name
+    2. Date of repository creation
+    3. Your name, and the names of other who worked on it
+    4. The purpose of the project and the main question you asked
+    5. The platform on which it was run (Prolific, MTURK, Qualtrics, etc.)
 - Once the repository is generated, you will be redirected to your new repository on GitHub.
 
 ## Contents
