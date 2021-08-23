@@ -1,5 +1,6 @@
 ## Analyzing data
 
+### Analysis process (outlined in the `.Rmd` file)
 1. Load packages and finish formatting the `.csv` (if necessary)
 2. Examine the distribution, average or other applicable metrics of the results of the experiment.
 3. Examine the demographics of the participants.
