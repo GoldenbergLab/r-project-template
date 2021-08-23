@@ -30,13 +30,15 @@ To use this template, click the green `Use this template` button at the top of t
 
 To connect (or clone) the analysis repository from GitHub (aka the internet) to your own computer, please go to the green `Code` button with a dropdown menu and do one of two things: 
 
-1. Open with [GitHub Desktop](https://desktop.github.com/) (for those with less coding experience)
+1. **Open with [GitHub Desktop](https://desktop.github.com/)** (for those with less coding experience)
+
 - Please download GitHub desktop using the link above
 - Click `Open with GitHub Desktop`, and pick a location in your personal file system to store it using the GitHub Desktop cloning interface. The default is `Documents\GitHub` (this is fine to use).
 - The folder should appear now in `Documents\GitHub\your-repository-name`.
 - If using Linux, see option 2.
 
-2. Command line using HTTPS method (for those with more coding experience)
+2. **Command line using HTTPS method** (for those with more coding experience)
+
 If using Linux or prefer the command line, you will use the HTTPS-based URL from the Code dropdown menu. The URL will look like https://github.com/startyourlab/r-project-template.git. Click the clipboard icon to copy it. From within your projects directory in the terminal, run git clone ..., replacing the "..." with the URL you just copied.
 
 ## Repository Contents
