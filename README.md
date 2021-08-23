@@ -32,7 +32,8 @@ To connect the analysis repository (folder) from GitHub (aka the internet) to yo
 
 1. Open with [GitHub Desktop](https://desktop.github.com/) (for those with less coding experience)
 - Please download GitHub desktop using the link above
-- Click `Open with GitHub Desktop`, and pick a location in your personal file system to store it using the GitHub Desktop cloning interface. The default is `Documents/GitHub` (this is fine to use).
+- Click `Open with GitHub Desktop`, and pick a location in your personal file system to store it using the GitHub Desktop cloning interface. The default is `Documents\GitHub` (this is fine to use).
+- The folder should appear now in `Documents\GitHub\your-repository-name`.
 - If using Linux, see option 2.
 
 2. Command line using HTTPS method (for those with more coding experience)
