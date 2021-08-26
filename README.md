@@ -2,7 +2,7 @@
 
 ## Contents
 - [Purpose](#purpose)
-- [Get Started)(#get-started)
+- [Get Started](#get-started)
     - Create your own analysis repository (#create-your-own)
     - Clone the repository to your local machine (#clone-to-your-machine)
 - [Repository Contents](#repository-content)
