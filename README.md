@@ -3,8 +3,8 @@
 ## Contents
 - [Purpose](#purpose)
 - [Get Started](#get-started)
-    - Create your own analysis repository (#create-your-analysis-repository-folder)
-    - Clone the repository to your local machine (#clone-the-repository-to-your-local-machine)
+    - [Create your own analysis repository](#create-your-analysis-repository-folder)
+    - [Clone the repository to your local machine](#clone-the-repository-to-your-local-machine)
 - [Repository Contents](#repository-contents)
 
 ## Purpose
