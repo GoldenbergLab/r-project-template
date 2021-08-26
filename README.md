@@ -1,5 +1,8 @@
 # analysis-r-template
 
+## Contents
+[Purpose](#Purpose)
+
 ## Purpose
 
 The goal of this project is to centralize and make more efficient the process of analyzing data. To do this, we have created a data-to-analysis pipeline that is easy to replicate and follow across many different projects. Use repository (folder) structure to process your files and analyze them.
