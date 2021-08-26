@@ -1,13 +1,13 @@
 # analysis-r-template
 
-## Contents
+<!-- toc -->
 - [Purpose](#purpose)
 - [Get Started](#get-started)
     - [Create your own analysis repository](#create-your-analysis-repository-folder)
     - [Clone the repository to your local machine](#clone-the-repository-to-your-local-machine)
 - [Repository Contents](#repository-contents)
 
-## Purpose
+<!-- tocstop -->
 
 The goal of this project is to centralize and make more efficient the process of analyzing data. To do this, we have created a data-to-analysis pipeline that is easy to replicate and follow across many different projects. Use repository (folder) structure to process your files and analyze them.
 
