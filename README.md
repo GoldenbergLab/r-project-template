@@ -71,5 +71,4 @@ By now, you should have a repository containing the folder below. Notice that th
   - The .Rprofile file in the project's main directory (if any) is sourced by R
   - The .RData file in the project's main directory is loaded (if project options indicate that it should be loaded).
   - The current working directory is set to the project directory.
-
-For further reading on r project see [here](https://support.rstudio.com/hc/en-us/articles/200526207-Using-Projects)
+  For further reading on r project see [here](https://support.rstudio.com/hc/en-us/articles/200526207-Using-Projects)
