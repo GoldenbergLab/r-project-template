@@ -7,7 +7,7 @@ The goal of the processing stage is to combine and modify raw data files (locate
 2. Once the raw data is in the right place, here are the things that are typically done during data processing:
  - get rid of incomplete or bad data.
  - remove unnecessary or duplicated columns.
- - rename variables to have clear names.
+ - rename variables to have clear names. These should be names that would be clear to someone who doesn't know the details of the project. See [naming conventions](https://github.com/GoldenbergLab/naming-conventions) for further detail on naming variables. 
  - Define variables based on their type (factor, numeric ect.)
 
 
@@ -16,7 +16,7 @@ The goal of the processing stage is to combine and modify raw data files (locate
 We created a bit of code that would help you to directly download the raw data to the right place. However, in order to make this happen there are a few things that needed to be done first in the r commend unlike
 
 Amit - here there shoudl be an explanation of the r commed line.
-amit - before the head to the file it would be good to explain what is required rather than just say follow these insructions. We need to provide a basic explanation of what is this commend line and why are we doing this. 
+amit - before the head to the file it would be good to explain what is required rather than just say follow these insructions. We need to provide a basic explanation of what is this commend line and why are we doing this.
 
 1. Head to the `download-processing.Rmd` file and define `aws_folder` (line 17) as the name of your task folder
 2. Follow the [documentation](https://cran.r-project.org/web/packages/aws.s3/readme/README.html) on `aws.s3` package to ensure that `R` can communicate with AWS. I was able to get this working by pasting the following code into the `R` console.
