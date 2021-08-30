@@ -13,7 +13,7 @@ The goal of the processing stage is to combine and modify raw data files (locate
 
 ### download data if using AWS
 
-We created a bit of code that would help you to directly download the raw data to the right place. However, in order to make this happen there are a few things that needed to be done first in the r commend unlike
+This code directly downloads the raw data from AWS to the data folder. To do this, there are a few things that needed to be done first in the `R` command line.
 
 Amit - here there shoudl be an explanation of the r commed line.
 amit - before the head to the file it would be good to explain what is required rather than just say follow these insructions. We need to provide a basic explanation of what is this commend line and why are we doing this.
