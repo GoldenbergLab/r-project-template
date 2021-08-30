@@ -11,9 +11,9 @@ The goal of the processing stage is to combine and modify raw data files (locate
  - Define variables based on their type (factor, numeric ect.)
 
 
-### download data if using AWS
+### Download data (AWS)
 
-This code directly downloads the raw data from AWS to the data folder. To do this, there are a few things that needed to be done first in the `R` command line.
+If you are using AWS, this code directly downloads the raw data from AWS to the data folder. To do this, there are a few things that needed to be done first in the `R` command line.
 
 Amit - here there shoudl be an explanation of the r commed line.
 amit - before the head to the file it would be good to explain what is required rather than just say follow these insructions. We need to provide a basic explanation of what is this commend line and why are we doing this.
