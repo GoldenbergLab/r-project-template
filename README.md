@@ -5,7 +5,7 @@
 - [Get Started](#get-started)
     - [Create your own analysis repository](#create-your-analysis-repository-folder)
     - [Clone the repository to your local machine](#clone-the-repository-to-your-local-machine)
-    - [Rename the r project file] (#rename-the-r-project-file)
+    - [Rename the r project file](#rename-the-r-project-file)
 - [Repository Contents](#repository-contents)
 
 <!-- tocstop -->
