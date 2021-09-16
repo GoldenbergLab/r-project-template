@@ -21,7 +21,7 @@ This template will instruct you how to:
 
 ## Get Started
 
-### use this template
+### Use this template
 
 To use this template, click the green `Use this template` button at the top of the page. It will ask you to:
 
