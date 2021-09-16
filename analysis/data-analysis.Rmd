@@ -51,30 +51,17 @@ library(knitr)
 
 ```
 
+### Exploratory Analysis (replace this with description)
 
-### H2 Analysis (replace this with description of H2)
+#### How does [exploratory variable] influence [results]?
 
-#### How does [H2 variable] influence [results]?
+```{r Exploratory}
 
-```{r H2}
+## analysis and p-value
 
-## analysis and p-value of H2
-
-## graph of H2
-
+## graph
 ```
 
-### H3 Analysis (replace this with description of H3)
-
-#### How does [H3 variable] influence [results]?
-
-```{r H3}
-
-## analysis and p-value of H3
-
-## graph of H3
-
-```
 
 
 ### Power Analysis 
