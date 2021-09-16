@@ -13,10 +13,7 @@ The goal of the processing stage is to combine and modify raw data files (locate
 
 ### Download data (AWS)
 
-If you are using AWS, this code directly downloads the raw data from AWS to the data folder. To do this, there are a few things that needed to be done first in the `R` command line.
-
-Amit - here there shoudl be an explanation of the r commed line.
-amit - before the head to the file it would be good to explain what is required rather than just say follow these insructions. We need to provide a basic explanation of what is this commend line and why are we doing this.
+If you are using AWS, this code directly downloads the raw data from AWS to the data folder. To do this, there are a few things that needed to be done first in the `R` console, which is located beneath your `R` code. It should be labeled `console` at the top left. We will input our AWS key into this console. The AWS key is a set of credentials that allows the `R` software on your computer to connect with the AWS server online. Inputting the credentials into the `R` console saves them into your `R` environement space (which means you won't have to input them again after doing this once).
 
 1. Head to the `download-processing.Rmd` file and define `aws_folder` (line 17) as the name of your task folder
 2. Follow the [documentation](https://cran.r-project.org/web/packages/aws.s3/readme/README.html) on `aws.s3` package to ensure that `R` can communicate with AWS. I was able to get this working by pasting the following code into the `R` console.
