@@ -1,15 +1,12 @@
 ## Processing your data
 
-The goal of the processing stage is to combine and modify raw data files (located in the data folder) into a comprehensible csv file (or files, depending on the need) that would be later used in the analysis
+This stage combines and RAW data files (located in the data folder) into ONE comprehensible csv file (or files, depending on the need) to be later used in the analysis. You need to do the following things in order to accomplish this: 
 
-1. To get started copy your raw data in to the data/raw folder. Notice that these files would only be located on your local computer and not on the repo. Therefore you need to find a way to make sure that these files are backed up.
+  1. Download experiment data files from AWS
+  2. Select the incomplete files based on file size
+  3. Moves the incomplete files to a separate folder from the main data folder
 
-2. Once the raw data is in the right place, here are the things that are typically done during data processing:
- - get rid of incomplete or bad data.
- - remove unnecessary or duplicated columns.
- - rename variables to have clear names. These should be names that would be clear to someone who doesn't know the details of the project. See [naming conventions](https://github.com/GoldenbergLab/naming-conventions) for further detail on naming variables. 
- - Define variables based on their type (factor, numeric ect.)
-
+A brief tutorial on the code chunks that do this are below. If you can't run the code chunks, you can also do this manually. 
 
 ### Download data (AWS)
 
@@ -25,3 +22,11 @@ If you are using AWS, this code directly downloads the raw data from AWS to the 
 	```
 3. Run the first chunk of the processing code. This will download all data files on to your machine. Note: the raw data files should **NEVER EVER** reach GitHub. They are meant to be stored locally on your computer only. This repository is preprogrammed to ignore everything in the `data/raw/` folder - **DO NOT CHANGE THAT!**
 4. Examine the histogram and determine the cutoff point for complete versus incomplete files. If the file is incomplete, move it to te `did_not_finish` folder.
+
+### Processing data
+
+Once the raw data is in the right place (and incomplete files are removed), here are the things that are typically done during data processing:
+ - get rid of incomplete or bad data.
+ - remove unnecessary or duplicated columns.
+ - rename variables to have clear names. These should be names that would be clear to someone who doesn't know the details of the project. See [naming conventions](https://github.com/GoldenbergLab/naming-conventions) for further detail on naming variables. 
+ - Define variables based on their type (factor, numeric ect.)
