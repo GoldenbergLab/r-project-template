@@ -6,7 +6,7 @@ This stage combines and RAW data files (located in the data folder) into ONE com
   2. Select the incomplete files based on file size
   3. Moves the incomplete files to a separate folder from the main data folder
 
-A brief tutorial on the code chunks that do this are below. If you can't run the code chunks, you can also do this manually. 
+A brief tutorial on the code `download-processing.Rmd` to do this is below. If you can't run the code chunks, you can also do this manually. 
 
 ### Download data (AWS)
 
