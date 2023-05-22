@@ -5,7 +5,7 @@
 - **Chunk 1 is reserved for downloading the data and load the packages.** This should be the place where you define all of the variables, and modify the data.
 - **Every chunks should be named.** You can name the chunk by typing the name after `r` on the first line of the chunk. So, to name a chunk `cats`, the first line of the chunk should say `{r cats}`
 - detail of the Analysis should be **clearly** described before the chunk. Summary of the results can be done below each chunk.
-- **Dataframe Names** should be simple as they are commonly used. We often use d for a widet-format data and dl for longer-format data [see explanations here](https://en.wikipedia.org/wiki/Wide_and_narrow_data)
+- **Dataframe Names** should be simple as they are commonly used. We often use `d` for a wide-format data and `dl` for longer-format data [see explanations of wide and long data here](https://en.wikipedia.org/wiki/Wide_and_narrow_data)
 
 ## Analysis process (outlined in the `.Rmd` file)
 Analysis files often have a similar strcuture. Please try to follow this structure as much as possible.
