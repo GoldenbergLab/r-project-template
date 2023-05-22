@@ -1,14 +1,45 @@
 ---
-title: "__ Data Processing (change title to reflect your experiment)"
+title: "[EXPERIMENT NAME] Data Processing (change title to reflect your experiment)"
 output: html_notebook
 ---
 
+```{r libraries, include = FALSE}
+
+### we use groundhog (https://groundhogr.com/) to manage our packages. Groundhog makes sure that our package versions are consistent with the date that we are running the analysis to prevent any issues related to package versioning in future analyses. 
+
+###To use groundhog, please: (1) make sure that you have the latest version of R/ RStudio installed; (2) install RTools
+
+################# run this line if you don't have groundhog installed.
+#remotes::install_github('CredibilityLab/groundhog',upgrade = "always")
+
+################# call groundhog
+if(!suppressWarnings(require(groundhog))){remotes::install_github('CredibilityLab/groundhog');library("groundhog")}
+
+
+######################## put all packages in and call groundhog
+pkgs <- c(
+    "aws.s3",
+    "tidyverse"
+    )
+
+pkgs_all <- c(pkgs)
+
+########################## call groundhog. Change out the date for today's date (unless you are running an old analysis)
+groundhog.library(pkgs_all, "2023-04-23")
+
+############# this line of code runs better in Windows
+#groundhog.library(pkgs_all, "2023-04-23",ignore.deps = c('rlang', 'fs' ) )
+
+```
+
 
 ```{r download data and examine file sizes for cutoff point}
-library(aws.s3)
-library(tidyverse)
 
-## The purpose of this file is to download the raw data objects from AWS and to put them in a local data folder. Following that, please process the raw data files until ONE SINGLE .csv file is produced. This final .csv should contain one trial per line. 
+## Download raw data objects and put them into the "data" folder
+
+## If this line of code does not run, you can alternatively download the data via cyberduck
+
+############################ this cell often does not work. Alternatively, you can copy-paste the raw data files into the data/raw folder
 
 #Provides a list of all of the buckets in the list 
 bucketlist("s3://task-data-raw/")
@@ -19,7 +50,18 @@ aws_folder ="bills-task-pilot"
 #download all the files from that folder to your raw library 
 system(paste("aws s3 cp s3://task-data-raw/",aws_folder," ../data/raw --recursive", sep = ""))
 
-#creat a list of the files and their sizes
+
+
+
+```
+
+
+```{r}
+
+## filter files by size to figure out which data files are incomplete and should therefore be removed
+## this part often does not work. If this is the case, please manually examine the files, decide which ones are incomplete and move the incomplete ones into the "did not finish" folder
+
+#create a list of the files and their sizes
 raw_files = file.info(list.files ("../data/raw", 
                                   full.names =TRUE, 
                                   recursive=FALSE)) %>% 
@@ -29,17 +71,11 @@ raw_files = file.info(list.files ("../data/raw",
 ggplot(raw_files,aes(x=size_kb)) +
   geom_histogram(color = "black") 
 
-
-```
-
-
-```{r}
 #define your kb file size criteria for files you wish to remove
 size_criteria = 150
-#shell(paste("find ..\\data\\raw\\ -type f -size -150k -exec mv ..\\data\\raw ..\\data\\raw\\did_not_finish\\+"))
-#system(paste("mv ../data/raw ../data/raw/did_not_finish\ " ))
+shell(paste("find ../data/raw/ -type f -size -150k -exec mv ../data/raw ../data/raw/did_not_finish/+"))
 
-#above code does not work (yet), please manually move the files that are too small according to the histogram into the did_not_finish folder to proceed.
+system(paste("mv ../data/raw ../data/raw/did_not_finish/ " ))
 
 
 path =  "../data/raw" #path to the raw files (of good size)
