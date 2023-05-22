@@ -1,6 +1,14 @@
 ---
 title: "[EXPERIMENT NAME] Data Processing (change title to reflect your experiment)"
 output: html_notebook
+
+This code tutorial does two things:
+  
+  1. Downloads experiment data files from AWS
+  2. Selects the incomplete files based on file size
+  3. Moves the incomplete files to a new folder
+  
+If you are unable to run this code for any reason, you can also do this manually. To do this manually, follow the tutorial here: 
 ---
 
 ```{r libraries, include = FALSE}
