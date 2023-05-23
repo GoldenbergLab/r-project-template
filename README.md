@@ -72,3 +72,9 @@ By now, you should have a repository containing the folder below. Notice that th
   - The .RData file in the project's main directory is loaded (if project options indicate that it should be loaded).
   - The current working directory is set to the project directory.
   For further reading on r project see [here](https://support.rstudio.com/hc/en-us/articles/200526207-Using-Projects)
+  
+  ## Note on Groundhog
+  
+We use groundhog (https://groundhogr.com/) to manage our packages. Groundhog makes sure that our package versions are consistent with the date that we are running the analysis to prevent any issues related to package versioning in future analyses. 
+
+To use groundhog, please: (1) make sure that you have the latest version of R/ RStudio installed; (2) install RTools. If you are using Windows, you may encounter some difficulties with package dependecies. We specify how to work around these issues in the code. 
