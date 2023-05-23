@@ -1,18 +1,18 @@
 ---
-title: "__ Data Analysis (change title to reflect your study)"
+title: "[YOUR STUDY] Data Analysis"
 output: html_notebook
 ---
 
+We use groundhog (https://groundhogr.com/) to manage our packages. Groundhog makes sure that our package versions are consistent with the date that 
+We are running the analysis to prevent any issues related to package versioning in future analyses. 
+
+To use groundhog, please: 
+(1) make sure that you have the latest version of R/ RStudio installed; 
+(2) install RTools
+
 ```{r download packages and format csv to prepare for analysis}
 
-### we use groundhog (https://groundhogr.com/) to manage our packages. Groundhog makes sure that our package versions are consistent with the date that we are running the analysis to prevent any issues related to package versioning in future analyses. 
-
-###To use groundhog, please: (1) make sure that you have the latest version of R/ RStudio installed; (2) install RTools
-
-################# run this line if you don't have groundhog installed.
-#remotes::install_github('CredibilityLab/groundhog',upgrade = "always")
-
-################# call groundhog
+#call groundhog
 if(!suppressWarnings(require(groundhog))){remotes::install_github('CredibilityLab/groundhog');library("groundhog")}
 
 
@@ -30,10 +30,10 @@ pkgs <- c(
 
 pkgs_all <- c(pkgs)
 
-########################## call groundhog. Change out the date for today's date (unless you are running an old analysis)
+# call groundhog. Change out the date for today's date (unless you are running an old analysis)
 groundhog.library(pkgs_all, "2023-04-23")
 
-############# this line of code runs better in Windows
+# this line of code runs better in Windows
 #groundhog.library(pkgs_all, "2023-04-23",ignore.deps = c('rlang', 'fs' ) )
 
 ```

@@ -8,7 +8,7 @@ This code tutorial does three things:
   2. Selects the incomplete files based on file size
   3. Moves the incomplete files to a new folder
   
-If you are unable to run this code for any reason, you can also do this manually. To do this manually, follow the tutorial here: 
+If you are unable to run this code for any reason, you can also do this manually (without using the code). You will use Cyberduck to download data and sort through incomplete files by looking at file sizes. To do this manually, follow the tutorial here: https://github.com/GoldenbergLab/lab-helper-codes/blob/main/guides/aws/s3-tasks/download.md
 ---
 We use groundhog (https://groundhogr.com/) to manage our packages. Groundhog makes sure that our package versions are consistent with the date that 
 We are running the analysis to prevent any issues related to package versioning in future analyses. 
@@ -18,9 +18,6 @@ To use groundhog, please:
 (2) install RTools
 
 ```{r libraries, include = FALSE}
-
-#Run this line if you don't have groundhog installed.
-#remotes::install_github('CredibilityLab/groundhog',upgrade = "always")
 
 #call groundhog
 if(!suppressWarnings(require(groundhog))){remotes::install_github('CredibilityLab/groundhog');library("groundhog")}
