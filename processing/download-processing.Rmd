@@ -2,7 +2,7 @@
 title: "[EXPERIMENT NAME] Data Processing (change title to reflect your experiment)"
 output: html_notebook
 
-This code tutorial does two things:
+This code tutorial does three things:
   
   1. Downloads experiment data files from AWS
   2. Selects the incomplete files based on file size
@@ -26,7 +26,7 @@ To use groundhog, please:
 if(!suppressWarnings(require(groundhog))){remotes::install_github('CredibilityLab/groundhog');library("groundhog")}
 
 
-######################## put all packages in and call groundhog
+# put all packages in and call groundhog
 pkgs <- c(
     "aws.s3",
     "tidyverse"
@@ -34,10 +34,10 @@ pkgs <- c(
 
 pkgs_all <- c(pkgs)
 
-########################## call groundhog. Change out the date for today's date (unless you are running an old analysis)
+# call groundhog. Change out the date for today's date (unless you are running an old analysis)
 groundhog.library(pkgs_all, "2023-04-23")
 
-############# this line of code runs better in Windows
+# this line of code runs better in Windows
 #groundhog.library(pkgs_all, "2023-04-23",ignore.deps = c('rlang', 'fs' ) )
 
 ```
@@ -49,7 +49,7 @@ groundhog.library(pkgs_all, "2023-04-23")
 
 ## If this line of code does not run, you can alternatively download the data via Cyberduck/ manually move the raw data objects into the data folder. Tutorial here: https://github.com/GoldenbergLab/lab-helper-codes/blob/main/guides/aws/s3-tasks/download.md
 
-################ paste the following code into the R Console to set AWS credentials
+# paste the following code into the R Console to set AWS credentials
 # Sys.setenv("AWS_ACCESS_KEY_ID" = "mykey",
 #        "AWS_SECRET_ACCESS_KEY" = "mysecretkey",
 #        "AWS_DEFAULT_REGION" = "us-east-1")
@@ -105,9 +105,5 @@ d = csv_files %>%
 
 ```
 
-Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Cmd+Option+I*.
 
-When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Cmd+Shift+K* to preview the HTML file). 
-
-The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
 
