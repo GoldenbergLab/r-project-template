@@ -10,17 +10,19 @@ This code tutorial does two things:
   
 If you are unable to run this code for any reason, you can also do this manually. To do this manually, follow the tutorial here: 
 ---
+We use groundhog (https://groundhogr.com/) to manage our packages. Groundhog makes sure that our package versions are consistent with the date that 
+We are running the analysis to prevent any issues related to package versioning in future analyses. 
+
+To use groundhog, please: 
+(1) make sure that you have the latest version of R/ RStudio installed; 
+(2) install RTools
 
 ```{r libraries, include = FALSE}
 
-### we use groundhog (https://groundhogr.com/) to manage our packages. Groundhog makes sure that our package versions are consistent with the date that we are running the analysis to prevent any issues related to package versioning in future analyses. 
-
-###To use groundhog, please: (1) make sure that you have the latest version of R/ RStudio installed; (2) install RTools
-
-################# run this line if you don't have groundhog installed.
+#Run this line if you don't have groundhog installed.
 #remotes::install_github('CredibilityLab/groundhog',upgrade = "always")
 
-################# call groundhog
+#call groundhog
 if(!suppressWarnings(require(groundhog))){remotes::install_github('CredibilityLab/groundhog');library("groundhog")}
 
 
