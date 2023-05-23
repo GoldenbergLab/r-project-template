@@ -1,4 +1,6 @@
-# task-or-repo-name
+# YOUR REPOSITORY NAME
+
+This template helps to set up your repository's README.
 
 - **Project goal:** 
 - **Important files:** 
