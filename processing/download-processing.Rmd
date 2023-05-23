@@ -15,6 +15,7 @@ We use groundhog (https://groundhogr.com/) to manage our packages. Groundhog mak
 To use groundhog, please: 
 (1) make sure that you have the latest version of R/ RStudio installed; 
 (2) install RTools
+(3) make sure you are in a new R Session
 
 ```{r libraries, include = FALSE}
 
