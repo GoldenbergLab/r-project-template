@@ -75,6 +75,6 @@ By now, you should have a repository containing the folder below. Notice that th
   
   ## Note on Groundhog
   
-We use groundhog (https://groundhogr.com/) to manage our packages. Groundhog makes sure that our package versions are consistent with the date that we are running the analysis to prevent any issues related to package versioning in future analyses. 
+We use groundhog (https://groundhogr.com/) to manage our packages. Groundhog makes sure that our package versions are consistent with the date that we are running the analysis to prevent any issues related to package versioning in future analyses. Details of how groundhog works is present in every code template.
 
-To use groundhog, please: (1) make sure that you have the latest version of R/ RStudio installed; (2) install RTools. If you are using Windows, you may encounter some difficulties with package dependecies. We specify how to work around these issues in the code. 
+To use groundhog, please: (1) make sure that you have the latest version of R/ RStudio installed; (2) install RTools; (3) make sure that you are in a fresh R session. If you are using Windows, you may encounter some difficulties with package dependecies. We specify how to work around these issues in the code. 
