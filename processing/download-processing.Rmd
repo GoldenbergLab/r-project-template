@@ -72,7 +72,7 @@ Filter files by size to figure out which data files are incomplete and should th
 
 This part often does not work (especially on Windows). If this is the case, please manually examine the files, decide which ones are incomplete and move the incomplete ones into the "did not finish" folder
 
-```{r}
+```{r aws}
 
 
 
