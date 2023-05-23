@@ -40,16 +40,18 @@ groundhog.library(pkgs_all, "2023-04-23")
 ```
 
 
+If this line of code does not run, you can alternatively download the data via Cyberduck and manually move the raw data objects into the data folder. Tutorial here: https://github.com/GoldenbergLab/lab-helper-codes/blob/main/guides/aws/s3-tasks/download.md
+
+paste the following code into the R Console to set AWS credentials. For AWS credentials, reach out to Amit or the lab manager.
+
+Sys.setenv("AWS_ACCESS_KEY_ID" = "mykey",
+       "AWS_SECRET_ACCESS_KEY" = "mysecretkey",
+        "AWS_DEFAULT_REGION" = "us-east-1")
+
+
 ```{r download data and examine file sizes for cutoff point}
 
 ## Download raw data objects and put them into the "data" folder
-
-## If this line of code does not run, you can alternatively download the data via Cyberduck/ manually move the raw data objects into the data folder. Tutorial here: https://github.com/GoldenbergLab/lab-helper-codes/blob/main/guides/aws/s3-tasks/download.md
-
-# paste the following code into the R Console to set AWS credentials
-# Sys.setenv("AWS_ACCESS_KEY_ID" = "mykey",
-#        "AWS_SECRET_ACCESS_KEY" = "mysecretkey",
-#        "AWS_DEFAULT_REGION" = "us-east-1")
 
 #Provides a list of all of the buckets in the list 
 bucketlist("s3://task-data-raw/")
@@ -66,10 +68,13 @@ system(paste("aws s3 cp s3://task-data-raw/",aws_folder," ../data/raw --recursiv
 ```
 
 
+Filter files by size to figure out which data files are incomplete and should therefore be removed
+
+This part often does not work (especially on Windows). If this is the case, please manually examine the files, decide which ones are incomplete and move the incomplete ones into the "did not finish" folder
+
 ```{r}
 
-## filter files by size to figure out which data files are incomplete and should therefore be removed
-## this part often does not work. If this is the case, please manually examine the files, decide which ones are incomplete and move the incomplete ones into the "did not finish" folder
+
 
 #create a list of the files and their sizes
 raw_files = file.info(list.files ("../data/raw", 
@@ -98,9 +103,12 @@ d = csv_files %>%
   map_dfr(read_csv)
 
 
-# Process the data in the next few chunks. The final output of this data processing should be one long-format csv that contains one trial per line.
-
 ```
 
 
+Process the data in the next few chunks. The final output of this data processing should be one long-format csv that contains one trial per line.
+
+```{r}
+
+```
 
