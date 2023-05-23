@@ -45,9 +45,12 @@ groundhog.library(pkgs_all, "2023-04-23")
 
 ## Download raw data objects and put them into the "data" folder
 
-## If this line of code does not run, you can alternatively download the data via cyberduck
+## If this line of code does not run, you can alternatively download the data via Cyberduck/ manually move the raw data objects into the data folder. Tutorial here: https://github.com/GoldenbergLab/lab-helper-codes/blob/main/guides/aws/s3-tasks/download.md
 
-############################ this cell often does not work. Alternatively, you can copy-paste the raw data files into the data/raw folder
+################ paste the following code into the R Console to set AWS credentials
+# Sys.setenv("AWS_ACCESS_KEY_ID" = "mykey",
+#        "AWS_SECRET_ACCESS_KEY" = "mysecretkey",
+#        "AWS_DEFAULT_REGION" = "us-east-1")
 
 #Provides a list of all of the buckets in the list 
 bucketlist("s3://task-data-raw/")
