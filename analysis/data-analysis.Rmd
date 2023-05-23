@@ -16,7 +16,7 @@ To use groundhog, please:
 if(!suppressWarnings(require(groundhog))){remotes::install_github('CredibilityLab/groundhog');library("groundhog")}
 
 
-######################## put all packages in and call groundhog
+# put all packages in and call groundhog
 pkgs <- c(
     "Rmisc",
     "tidyverse",
