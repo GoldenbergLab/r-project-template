@@ -3,8 +3,7 @@ title: "[YOUR STUDY] Data Analysis"
 output: html_notebook
 ---
 
-We use groundhog (https://groundhogr.com/) to manage our packages. Groundhog makes sure that our package versions are consistent with the date that 
-We are running the analysis to prevent any issues related to package versioning in future analyses. 
+We use groundhog (https://groundhogr.com/) to manage our packages. Groundhog makes sure that our package versions are consistent with the current date. This way, everyone will be using packages from the same date to prevent any issues related to package versioning in future analyses. 
 
 To use groundhog, please: 
 (1) make sure that you have the latest version of R/ RStudio installed; 
