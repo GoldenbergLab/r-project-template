@@ -12,8 +12,12 @@ To use groundhog, please:
 
 ```{r download packages and format csv to prepare for analysis}
 
+# if you need to install groundhog
+#if(!suppressWarnings(require(groundhog))){remotes::install_github('CredibilityLab/groundhog')}
+
 #call groundhog
-if(!suppressWarnings(require(groundhog))){remotes::install_github('CredibilityLab/groundhog');library("groundhog")}
+library("groundhog")
+
 
 
 # put all packages in and call groundhog
