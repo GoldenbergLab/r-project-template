@@ -10,6 +10,12 @@ To use groundhog, please:
 (2) install RTools
 (3) make sure you are in a new R Session
 
+
+The R Version used to create this file is: `R version 4.3.0 (2023-04-21 ucrt)`. You can change this out with your own version of R if you are using this template to create your own analysis. If you are reproducing another person's analysis, please download the version of R used by the previous person to ensure a proper reproduction of the code.
+
+You can identify your version of R by typing `version` into the R Console
+
+
 ```{r download packages and format csv to prepare for analysis}
 
 # if you need to install groundhog

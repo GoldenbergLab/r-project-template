@@ -13,9 +13,13 @@ If you are unable to run this code for any reason, you can also do this manually
 We use groundhog (https://groundhogr.com/) to manage our packages. Groundhog makes sure that our package versions are consistent with the current date. This way, everyone will be using packages from the same date to prevent any issues related to package versioning in future analyses. 
 
 To use groundhog, please: 
-(1) make sure that you have the latest version of R/ RStudio installed; 
+(1) make sure that you have the latest version of R/Rstudio installed 
 (2) install RTools
 (3) make sure you are in a new R Session
+
+The R Version used to create this file is: `R version 4.3.0 (2023-04-21 ucrt)`. You can change this out with your own version of R if you are using this template to create your own analysis. If you are reproducing another person's analysis, please download the version of R used by the previous person to ensure a proper reproduction of the code.
+
+You can identify your version of R by typing `version` into the R Console
 
 ```{r libraries, include = FALSE}
 
