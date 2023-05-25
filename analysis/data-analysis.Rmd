@@ -15,6 +15,8 @@ The R Version used to create this file is: `R version 4.3.0 (2023-04-21 ucrt)`. 
 
 You can identify your version of R by typing `version` into the R Console
 
+You can switch your R version by pressing `Tools` > `Global Options` > `R Version`
+
 
 ```{r download packages and format csv to prepare for analysis}
 
