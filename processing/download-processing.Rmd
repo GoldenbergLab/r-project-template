@@ -1,21 +1,26 @@
 ---
-title: "[EXPERIMENT NAME] Data Processing (change title to reflect your experiment)"
-output: html_notebook
-
-This code tutorial does three things:
-  
-  1. Downloads experiment data files from AWS
-  2. Selects the incomplete files based on file size
-  3. Moves the incomplete files to a new folder
-  
-If you are unable to run this code for any reason, you can also do this manually (without using the code). You will use Cyberduck to download data and sort through incomplete files by looking at file sizes. To do this manually, follow the tutorial here: https://github.com/GoldenbergLab/lab-helper-codes/blob/main/guides/aws/s3-tasks/download.md
+title: '[EXPERIMENT NAME] Data Processing (change title to reflect your experiment)'
+output:
+  html_document:
+    df_print: paged
+This code tutorial does three things: 1. Downloads experiment data files from AWS
+  2. Selects the incomplete files based on file size 3. Moves the incomplete files
+  to a new folder
+  (without using the code). You will use Cyberduck to download data and sort through
+  incomplete files by looking at file sizes. To do this manually, follow the tutorial
+  here
 ---
+## R-groundhog
+
 We use groundhog (https://groundhogr.com/) to manage our packages. Groundhog makes sure that our package versions are consistent with the current date. This way, everyone will be using packages from the same date to prevent any issues related to package versioning in future analyses. 
 
 To use groundhog, please: 
-(1) make sure that you have the latest version of R/Rstudio installed 
-(2) install RTools
-(3) make sure you are in a new R Session
+
+1. make sure that you have the latest version of R/Rstudio installed 
+2. install RTools
+3. make sure you are in a new R Session
+
+## R Version
 
 The R Version used to create this file is: `R version 4.3.0 (2023-04-21 ucrt)`. You can change this out with your own version of R if you are using this template to create your own analysis. If you are reproducing another person's analysis, please download the version of R used by the previous person to ensure a proper reproduction of the code.
 
@@ -23,7 +28,9 @@ You can identify your version of R by typing `version` into the R Console
 
 You can switch your R version by pressing `Tools` > `Global Options` > `R Version`
 
-```{r libraries, include = FALSE}
+## Install Packages
+
+```{r libraries, include = TRUE}
 
 # if you need to install groundhog
 #if(!suppressWarnings(require(groundhog))){remotes::install_github('CredibilityLab/groundhog')}
@@ -48,15 +55,19 @@ groundhog.library(pkgs_all, "2023-04-23")
 
 ```
 
+## Downloading Data from AWS
 
 If this line of code does not run, you can alternatively download the data via Cyberduck and manually move the raw data objects into the data folder. Tutorial here: https://github.com/GoldenbergLab/lab-helper-codes/blob/main/guides/aws/s3-tasks/download.md
 
-paste the following code into the R Console to set AWS credentials. For AWS credentials, reach out to Amit or the lab manager.
+Paste the following code into the R Console to set AWS credentials. For AWS credentials, reach out to Amit or the lab manager.
 
+```
 Sys.setenv("AWS_ACCESS_KEY_ID" = "mykey",
        "AWS_SECRET_ACCESS_KEY" = "mysecretkey",
         "AWS_DEFAULT_REGION" = "us-east-1")
-
+```
+        
+**You will also need to install the AWS command-line interface (CLI) to be able to use the following code. To do so: try the instructions [in AWS documentation here](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html), or if you're familiar with installing things through Python's `pip`, [the instructions in this Github README](https://github.com/aws/aws-cli)**
 
 ```{r download data and examine file sizes for cutoff point}
 
@@ -77,7 +88,9 @@ system(paste("aws s3 cp s3://task-data-raw/",aws_folder," ../data/raw --recursiv
 ```
 
 
-Filter files by size to figure out which data files are incomplete and should therefore be removed
+### Filter files by size to figure out which data files are incomplete and should therefore be removed
+
+**If you don't need to filter your data, continue to the next chunk.**
 
 This part often does not work (especially on Windows). If this is the case, please manually examine the files, decide which ones are incomplete and move the incomplete ones into the "did not finish" folder
 
