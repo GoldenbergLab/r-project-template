@@ -67,7 +67,7 @@ Sys.setenv("AWS_ACCESS_KEY_ID" = "mykey",
         "AWS_DEFAULT_REGION" = "us-east-1")
 ```
         
-**You will also need to install the AWS command-line interface (CLI) to be able to use the following code. To do so: try the instructions [in AWS documentation here](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html), or if you're familiar with installing things through Python's `pip`, [the instructions in this Github README](https://github.com/aws/aws-cli)**
+**You will also need to install the AWS command-line interface (CLI) to be able to use the following code. To do so: try the instructions [in AWS documentation here](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html), or if you're familiar with installing things through Python's `pip`, [the instructions in this Github README](https://github.com/aws/aws-cli). On MacOS, you can also use [Homebrew](https://formulae.brew.sh/formula/awscli).**
 
 ```{r download data and examine file sizes for cutoff point}
 
