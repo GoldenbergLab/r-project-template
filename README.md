@@ -28,7 +28,7 @@ To use this template, click the green `Use this template` button at the top of t
 - Choose the repository's username/organization name.
     - Please set the owner of your analysis template to our lab (`GoldenbergLab`).
     - All analysis repositories should start as public, unless indicated otherwise.
-- Name the repository following the lab naming convention. Full guide on repository naming conventions can be found [here](https://github.com/GoldenbergLab/naming-conventions#repository-names). In short, github repositories are following this naming convention: `project-name-analysis`. So if your project is about counting kittens, your repository name is `counting-kittens-analysis`.
+- Name the repository following the lab naming convention. Full guide on repository naming conventions can be found [here](https://github.com/GoldenbergLab/naming-conventions#repository-names). In short, github repositories are following this naming convention: `task-happiness-stanford-network-longetudinal-amit`. So that the first word describes the type of the repo (task, analysis, model), the second is the name (happiness-stanford-network-longetudinal)- try to be as specific as possible, and the last is your name (amit).
 - Add a description of your project. Please include:
     1. Project Name
     2. Date of repository creation
